@@ -1,0 +1,174 @@
+.single-chat--container{
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 50%;
+    z-index: 10;
+
+    background-color: white;
+}
+
+.single-chat--container-sub-div{
+    height: 100%;
+}
+
+/* Chat Header */
+
+.chat-header--container{
+    font-weight: 700;
+
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    padding: var(--container-padding);
+    padding-top: 29px;/* using a magic number */
+    border-bottom: 1px solid lightgray;
+
+    background-color: white;
+}
+
+/* Chat Body */
+
+.chat-body--container{
+    padding: 0;
+
+
+    height: calc(91vh - 40px);
+    width: 100%;
+
+    background-color: var(--list-background-color);
+
+    overflow: scroll;
+}
+
+.chat-body--flex{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column-reverse; 
+
+    overflow: scroll;
+}
+
+.chat-body--input{
+    position: absolute;
+    bottom: 0;
+
+    height: 40px;
+    width: 100%;
+
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding: 5px;
+
+    font-size: 16px;
+}
+
+.chat-body--input:focus{
+    outline: none;
+}
+
+/* User Message */
+
+.user-message--container{
+    display: flex;
+    flex-direction: column;
+
+    width: fit-content;
+    border-radius: 5px;
+    background-color: var(--flipkart-background-color);
+    color: white;
+}
+
+.user-message--container > div {
+    display: flex;
+    justify-content: right;
+
+    padding: 10px;
+}
+
+.user-message--image{
+    padding-top:5px;
+    height: 20px;
+    width: 20px;
+}
+
+.user-message--time{
+    font-size: 10px;
+    display: flex;
+    gap: 5px;
+    justify-content: right;
+    align-items: center;
+}
+
+
+
+.support-message--container{
+    display: flex;
+    flex-direction: column;
+
+    width: fit-content;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.support-message--container > div {
+    display: flex;
+    justify-content: left;
+
+    padding: 10px;
+}
+
+.support-message--image{
+    padding-top:5px;
+    height: 20px;
+    width: 20px;
+}
+
+.support-message--time{
+    font-size: 10px;
+    display: flex;
+    justify-content: right;
+    width: 100%;
+    align-items: center;
+}
+
+.support-message--options{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 14px;
+    font-weight: 500;
+
+    padding: 15px !important;
+    color: var(--flipkart-background-color);
+
+    border-top: 1px solid lightgray;
+}
+
+.disabled-background{
+    background-color: var(--optioned-background-color);
+    pointer-events: none;
+}
+
+.support-message--options:hover{
+    background-color: var(--list-background-color);
+    cursor: pointer;
+}
+
+.support-message--options-sub-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.support-message--options-sub-container div:nth-child(2){
+    color: gray;
+    font-size: 12px;
+}

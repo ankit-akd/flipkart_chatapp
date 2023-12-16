@@ -1,0 +1,50 @@
+.card--container{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    padding:20px;
+    border-bottom: 1px solid var(--list-divider-color);
+}
+
+.card--container:hover{
+    background-color: var(--list-background-color);
+}
+
+.card--container:last-child{
+    border-bottom: none !important;
+}
+
+
+.card--container-background{
+    background-color: var(--list-background-color);
+}
+
+.card--image > img {
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+}
+
+.card--left-column {
+    display: flex;
+    flex-direction: row;
+
+    gap: 30px;
+    
+}
+
+.card--info-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: var(--primary-color);
+}
+
+.card--secondary-message{
+    color: var(--secondary-color);
+}
+
+.card--date{
+    color: var(--secondary-color);
+}
